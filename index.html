@@ -11,9 +11,21 @@
 
     <!-- Style -->
     <style>
+        .box,
+        .box-rec {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
         .box {
             width: 150px;
             height: 150px;
+        }
+        
+        .box-rec {
+            width: 150px;
+            height: 60px;
         }
     </style>
 </head>
@@ -129,7 +141,7 @@
 
         <h1>Border Width</h1>
         <hr>
-        <div class="row">
+        <div class="row mb-5">
             <div class="box border border-4 m-1">
                 <p>border border-4</p>
             </div>
@@ -144,6 +156,31 @@
             </div>
         </div>
 
+        <h1>Border Radius</h1>
+        <hr>
+        <div class="row mb-5">
+            <div class="box bg-success border-4 rounded m-1 text-white">
+                <h6>rounded</h6>
+            </div>
+            <div class="box bg-success border-4 rounded-top m-1 text-white">
+                <h6>rounded-top</h6>
+            </div>
+            <div class="box bg-success border-4 rounded-bottom m-1 text-white">
+                <h6>rounded-bottom</h6>
+            </div>
+            <div class="box bg-success border-4 rounded-start m-1 text-white">
+                <h6>rounded-start</h6>
+            </div>
+            <div class="box bg-success border-4 rounded-end m-1 text-white">
+                <h6>rounded-end</h6>
+            </div>
+            <div class="box bg-success border-4 rounded-circle m-1 text-white">
+                <h6>rounded-circle</h6>
+            </div>
+            <div class="box box-rec bg-success border-4 rounded-pill m-1 text-white">
+                <h6>rounded-pill</h6>
+            </div>
+        </div>
 
         <br>
         <div class="btn btn-info">Descover</div>
